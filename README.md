@@ -11,14 +11,14 @@ Vector의 특성에 대해서 알아보고 적용해본 예제입니다.<br>
 - 2차원에서의 Vector는 x좌표와 y좌표를 표현할 수 있다.
 ```
 /* Pseudocode */
-var vector = { a : 0, b : 0} //x는 x좌표 y는 y좌표
+var vector = { a : ?, b : ?} //x는 x좌표 y는 y좌표
 vector.a //실제 x좌표
 vector.b //실제 y좌표
 ```
 - 2차원에서의 Vector는 각도(Radian)와 거리(Distance)를 표현할 수 있다.<br>
 ```
 /* Pseudocode */
-var vector = { a : 0, b : 0} //a는 각도(Radian), b는 거리(Distance)
+var vector = { a : ?, b : ?} //a는 각도(Radian), b는 거리(Distance)
 vector.b * cos(vector.a * PI) //실제 x좌표
 vector.b * sin(vector.a * PI) //실제 y좌표
 ```
@@ -30,14 +30,14 @@ vector.b * sin(vector.a * PI) //실제 y좌표
 *주의해야할 점은 normalization을 하면 normal vector가 아니라 unit vector가 된다*
 ```
 /* Pseudocode */
-var vector = { x : 0, y : 0 }
+var vector = { x : ?, y : ? }
 var length = sqrt(vector.x * vector.x + vector.y * vector.y)
 vector.x / length // Unit Vector의 x
 vector.y / length // Unit Vector의 y
 ```
 ```
 /* Pseudocode */
-var vector = { rad : 0, len : 0 }
+var vector = { rad : ?, len : ? }
 cos(vector.rad * PI) // Unit Vector의 x
 sin(vector.rad * PI) // Unit Vector의 y
 ```
