@@ -8,25 +8,25 @@ Vector의 특성에 대해서 알아보고 적용해본 예제입니다.<br>
 ### Vector의 특징
 #### vector의 표현
 
->2차원에서의 Vector는 x좌표와 y좌표를 표현할 수 있다.
+- 2차원에서의 Vector는 x좌표와 y좌표를 표현할 수 있다.
 ```
 /* Pseudocode */
 var vector = { a : 0, b : 0} //x는 x좌표 y는 y좌표
 vector.a //실제 x좌표
 vector.b //실제 y좌표
 ```
-2차원에서의 Vector는 각도(Radian)와 거리(Distance)를 표현할 수 있다.<br>
+- 2차원에서의 Vector는 각도(Radian)와 거리(Distance)를 표현할 수 있다.<br>
 ```
 /* Pseudocode */
 var vector = { a : 0, b : 0} //a는 각도(Radian), b는 거리(Distance)
 vector.b * cos(vector.a * PI) //실제 x좌표
 vector.b * sin(vector.a * PI) //실제 y좌표
 ```
-3차원에서의 Vector는 x, y, z좌표를 표현할 수 있다.<br>
-3차원에서의 Vector는 xy평면의 각도, yz평면의 각도, 거리를 표현할 수 있다.<br>
+- 3차원에서의 Vector는 x, y, z좌표를 표현할 수 있다.<br>
+- 3차원에서의 Vector는 xy평면의 각도, yz평면의 각도, 거리를 표현할 수 있다.<br>
 
 #### vector의 연산
->**normalization(정규화)** : vector를 x좌표와 y좌표로 사용하고 있을때 크기가 1인 Vector로 바꾸고 싶을 때 주로 사용한다.<br>
+- **normalization(정규화)** : vector를 x좌표와 y좌표로 사용하고 있을때 크기가 1인 Vector로 바꾸고 싶을 때 주로 사용한다.<br>
 *주의해야할 점은 normalization을 하면 normal vector가 아니라 unit vector가 된다*
 ```
 /* Pseudocode */
@@ -41,8 +41,8 @@ var vector = { rad : 0, len : 0 }
 cos(vector.rad * PI) // Unit Vector의 x
 sin(vector.rad * PI) // Unit Vector의 y
 ```
-**dot product(내적 연산)** : 두 백터의 내적 연산은 한 Vector A를 다른 Vector B에 투영시켰을 때의 크기를 계산한다.<br>
-**outer product(외적 연산)** : 두 백터의 외적 연산은 두 백터와 모두 수직한 백터 C를 계산한다. 3차원 공간에서 사용된다.<br>
+- **dot product(내적 연산)** : 두 백터의 내적 연산은 한 Vector A를 다른 Vector B에 투영시켰을 때의 크기를 계산한다.<br>
+- **outer product(외적 연산)** : 두 백터의 외적 연산은 두 백터와 모두 수직한 백터 C를 계산한다. 3차원 공간에서 사용된다.<br>
 
 ### 실행
 네트워크가 되는 환경에서 index.html을 실행합니다.
